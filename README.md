@@ -1,21 +1,21 @@
 # Santander Bootcamp 2023
-Projeto criado durante o BootCamp Santander Backend Java 2023
+Projeto criado durgitante o BootCamp Santander Backend Java 2023
 
 ## Diagrama de Classes
 
 ```mermaid
 classDiagram
     class User {
-        - id : Long
-        - name: String
-        - account: Account
+        - userId : Long
+        - userName: String
+        - userAccount: Account
         - features: Feature[]
         - card: Card
         - news: News[]
     }
     
     class Account {
-        - id : Long
+        - accountId : Long
         - accountNumber: String
         - accountAgency: String
         - accountBalance: Number
@@ -29,7 +29,7 @@ classDiagram
     }
     
     class Card {
-        - id : Long
+        - cardId : Long
         - cardNumber: String
         - availableLimit: Number
     }
