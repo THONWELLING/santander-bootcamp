@@ -6,6 +6,7 @@ Projeto criado durante o BootCamp Santander Backend Java 2023
 ```mermaid
 classDiagram
     class User {
+        - id : Long
         - name: String
         - account: Account
         - features: Feature[]
@@ -14,25 +15,29 @@ classDiagram
     }
     
     class Account {
+        - id : Long
         - accountNumber: String
         - accountAgency: String
         - accountBalance: Number
-        - creditLimit: Number
+        - adictionalLimit: Number
     }
     
     class Feature {
-        - featureIcon: String
-        - featureDescription: String
+        - id : Long
+        - Icon: String
+        - Description: String
     }
     
     class Card {
+        - id : Long
         - cardNumber: String
-        - cardLimit: Number
+        - availableLimit: Number
     }
     
     class News {
-        - newsIcon: String
-        - newsDescription: String
+        - id : Long
+        - Icon: String
+        - Description: String
     }
 
     User "1" *-- "1" Account
