@@ -21,6 +21,6 @@ public class Card {
   @Column(unique = true, length = 16)
   private String cardNumber;
 
-  @Column(precision = 2, scale = 13)
+  @Column(precision = 13, scale = 2)
   private BigDecimal availableLimit;
 }
