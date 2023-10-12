@@ -18,7 +18,7 @@ public class Account {
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   @Column(unique = true, length = 8)
-  private String accountNumber;
+  private String number;
   private String accountAgency;
 
   @Column(precision = 13, scale = 2, nullable = false)

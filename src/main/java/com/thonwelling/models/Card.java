@@ -19,7 +19,7 @@ public class Card {
   private Long cardId;
 
   @Column(unique = true, length = 16)
-  private String cardNumber;
+  private String number;
 
   @Column(precision = 13, scale = 2)
   private BigDecimal availableLimit;
